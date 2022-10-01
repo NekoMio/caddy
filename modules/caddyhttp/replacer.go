@@ -132,6 +132,9 @@ func addHTTPVarsToReplacer(repl *caddy.Replacer, req *http.Request, w http.Respo
 					return portNum, true
 				}
 				return port, true
+			case "http.request.client_ip":
+				ip, _ := req.Context().Value(ClientIPCtxKey).(string)
+				return ip, true
 
 			// current URI, including any internal rewrites
 			case "http.request.uri":

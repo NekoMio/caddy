@@ -1297,6 +1297,7 @@ func placeholderShorthands() []string {
 		"{remote}", "{http.request.remote}",
 		"{remote_host}", "{http.request.remote.host}",
 		"{remote_port}", "{http.request.remote.port}",
+		"{client_ip}", "{http.request.client_ip}",
 		"{scheme}", "{http.request.scheme}",
 		"{uri}", "{http.request.uri}",
 		"{tls_cipher}", "{http.request.tls.cipher_suite}",
